@@ -1,0 +1,32 @@
+# Smart Waste Sorting Bin - Python Dependencies
+# Raspberry Pi 5 Environment
+# Python 3.13 compatible
+
+# Core AI/ML Libraries
+ultralytics==8.3.230           # YOLOv8 object detection
+torch==2.9.1                   # PyTorch (CPU version for Pi)
+torchvision==0.24.1            # Vision utilities for PyTorch
+
+# Computer Vision
+opencv-python==4.10.0          # Image processing and display
+picamera2                      # Raspberry Pi camera control (system package)
+
+# Hardware Control
+RPi.GPIO                       # GPIO pin control (system package)
+
+# Data Processing
+numpy>=1.24.0                  # Numerical operations
+pillow>=10.0.0                 # Image handling
+
+# Dataset Management (optional - only if training)
+roboflow>=1.1.0                # Dataset download and management
+
+# Utilities
+python-dateutil>=2.8.2         # Date/time utilities
+
+# Note: picamera2 and RPi.GPIO should be installed via system packages
+# on Raspberry Pi OS, not via pip. Use:
+#   sudo apt install python3-picamera2 python3-rpi.gpio
+# 
+# Create virtual environment with system packages:
+#   python3 -m venv --system-site-packages camera_env
