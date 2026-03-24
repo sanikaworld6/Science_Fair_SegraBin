@@ -1,1 +1,1 @@
-# Science_Fair_SegraBin_2025
+# Science_Fair_SegraBin
